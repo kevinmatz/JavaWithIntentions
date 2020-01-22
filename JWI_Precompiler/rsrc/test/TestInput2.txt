@@ -1,0 +1,13 @@
+// Test input file for use with JavaWithIntentionsBasic_Lexer.g and JavaWithIntentionsBasic_Parser.g
+// References are intentionally invalid in this test case
+
+abstract intention GeneralIntention {
+
+}
+
+intention SpecificIntention1 extends GeneralIntentionXYZ { junk123 }
+
+intention SpecificIntention2 extends GeneralIntention { junk456 }
+
+class MyClass1 implementsintention SpecificIntention1, SpecificIntention2XXX { junk789 }
+
